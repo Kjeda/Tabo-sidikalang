@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Tabo | Bukan Kopi Biasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">KOPI <span>TABO</span>
+        <img class="logo-tabo" src="" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#reviews">Ulasan</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Bukan kopi biasa, ini <span>Kopi Tabo</span> ☕</h1>
+            <p>"Bukan kopi biasa, ini rasa cerita."</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-primary">Lihat Menu</a>
+                <a href="https://wa.me/6287774866237" class="btn-secondary">Order via WA</a>
+            </div>
+            <div class="hero-stats">
+                <span><i class="fas fa-star"></i> 5.0 (4 Ulasan)</span>
+                <span><i class="fas fa-map-marker-alt"></i> Dairi, Sumut</span>
+                <span><i class="fas fa-clock"></i> 11:00 - 23:00</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2 class="section-title" data-aos="fade-up">Menu Spesial Kami</h2>
+        
+        <div class="menu-tabs" data-aos="fade-up">
+            <button class="tab-btn active" onclick="filterMenu('all')">Semua</button>
+            <button class="tab-btn" onclick="filterMenu('kopi')">Kopi</button>
+            <button class="tab-btn" onclick="filterMenu('non-kopi')">Non-Kopi</button>
+            <button class="tab-btn" onclick="filterMenu('manual')">Manual Brew</button>
+        </div>
+
+
+        <section id="menu" class="menu-section">
+    <h2 class="section-title" data-aos="fade-up">Daftar Menu Kopi Tabo</h2>
+    
+    <div class="menu-tabs" data-aos="fade-up">
+        <button class="tab-btn active" onclick="filterMenu('all')">Semua</button>
+        <button class="tab-btn" onclick="filterMenu('kopi')">Kopi</button>
+        <button class="tab-btn" onclick="filterMenu('non-kopi')">Non-Kopi</button>
+        <button class="tab-btn" onclick="filterMenu('manual')">Manual Brew</button>
+        <button class="tab-btn" onclick="filterMenu('americano-series')">Americano Series</button>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-item kopi" data-aos="fade-up">
+            <div class="item-info">
+                <h3>Mocha</h3>
+                <p>Espresso mix chocolate premium</p>
+            </div>
+            <div class="item-prices">
+                <span>🔥 19k</span> | <span>❄️ 19.5k</span>
+            </div>
+        </div>
+        <div class="menu-item kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Butterscotch Latte</h3><p>Sweet & Buttery</p></div>
+            <div class="item-prices"><span>🔥 19k</span> | <span>❄️ 19.5k</span></div>
+        </div>
+        <div class="menu-item kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Kopi Susu Gula Aren</h3><p>Signature Kopi Tabo</p></div>
+            <div class="item-prices"><span>🔥 18.5k</span> | <span>❄️ 19k</span></div>
+        </div>
+        <div class="menu-item kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Espresso</h3><p>Pure Coffee Shot</p></div>
+            <div class="item-prices"><span>🔥 10k</span></div>
+        </div>
+
+        <div class="menu-item non-kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Matcha Latte</h3><p>Authentic Japanese Matcha</p></div>
+            <div class="item-prices"><span>🔥 19k</span> | <span>❄️ 19.5k</span></div>
+        </div>
+        <div class="menu-item non-kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Taro Latte</h3><p>Creamy Taro Purple</p></div>
+            <div class="item-prices"><span>🔥 16k</span> | <span>❄️ 16.5k</span></div>
+        </div>
+        <div class="menu-item non-kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Chocolate</h3><p>Rich & Creamy Chocolate</p></div>
+            <div class="item-prices"><span>🔥 15k</span> | <span>❄️ 15.5k</span></div>
+        </div>
+        <div class="menu-item non-kopi" data-aos="fade-up">
+            <div class="item-info"><h3>Mojito Lemon</h3><p>Fresh & Zesty</p></div>
+            <div class="item-prices"><span>❄️ 15k</span></div>
+        </div>
+
+        <div class="menu-item manual" data-aos="fade-up">
+            <div class="item-info"><h3>V60 Natural</h3><p>Light & Fruity</p></div>
+            <div class="item-prices"><span>☕ 18k</span></div>
+        </div>
+        <div class="menu-item manual" data-aos="fade-up">
+            <div class="item-info"><h3>Vietnam Drip</h3><p>Classic Sweetened Coffee</p></div>
+            <div class="item-prices"><span>☕ 15k</span></div>
+        </div>
+
+        <div class="menu-item americano-series" data-aos="fade-up">
+            <div class="item-info"><h3>Berry Americano</h3><p>Fresh berry meets espresso</p></div>
+            <div class="item-prices"><span>❄️ 18k</span></div>
+        </div>
+        <div class="menu-item americano-series" data-aos="fade-up">
+            <div class="item-info"><h3>Mango Americano</h3><p>Tropical coffee vibes</p></div>
+            <div class="item-prices"><span>❄️ 16k</span></div>
+        </div>
+    </div>
+</section>
+        <div class="menu-container">
+            <div class="menu-item kopi" data-aos="zoom-in">
+                <div class="item-info">
+                    <h3>Mocha</h3>
+                    <p>Espresso mix chocolate premium</p>
+                </div>
+                <span class="price">Rp 18k</span>
+            </div>
+            <div class="menu-item kopi" data-aos="zoom-in">
+                <div class="item-info">
+                    <h3>Cappuccino</h3>
+                    <p>Creamy & Bold</p>
+                </div>
+                <span class="price">Rp 15k</span>
+            </div>
+            <div class="menu-item non-kopi" data-aos="zoom-in">
+                <div class="item-info">
+                    <h3>Matcha Latte</h3>
+                    <p>Authentic Japanese Matcha</p>
+                </div>
+                <span class="price">Rp 15k</span>
+            </div>
+            <div class="menu-item non-kopi" data-aos="zoom-in">
+                <div class="item-info">
+                    <h3>Red Velvet</h3>
+                    <p>Sweet & Milky</p>
+                </div>
+                <span class="price">Rp 15k</span>
+            </div>
+            <div class="menu-item manual" data-aos="zoom-in">
+                <div class="item-info">
+                    <h3>V60</h3>
+                    <p>Clean & Aromatic</p>
+                </div>
+                <span class="price">Rp 12k</span>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div class="about-text" data-aos="fade-right">
+                <h2>Tentang Kami</h2>
+                <p>Kopi Tabo adalah kedai kopi lokal di Dairi yang menghadirkan minuman berkualitas dengan harga terjangkau. Owned by female entrepreneur yang fokus pada cita rasa otentik.</p>
+                <ul class="info-list">
+                    <li><i class="fas fa-location-arrow"></i> Jl. Pandu No.5, Dairi</li>
+                    <li><i class="fas fa-calendar-alt"></i> Senin - Minggu (Kamis Tutup)</li>
+                    <li><i class="fas fa-phone"></i> 0877-7486-6237</li>
+                </ul>
+            </div>
+            <div class="about-map" data-aos="fade-left">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Google Maps Embed Here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="reviews" class="reviews-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Apa Kata Mereka?</h2>
+        <div class="rating-summary" data-aos="fade-up">
+            <span class="big-rating">5.0</span>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Berdasarkan ulasan pelanggan setia Kopi Tabo</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Tempat ngopi paling asik di Dairi. Harganya ramah di kantong tapi rasanya premium banget. V60-nya juara!"</p>
+                <span class="reviewer">- Andi Perkasa</span>
+            </div>
+
+            <div class="review-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Matcha Latte-nya beneran kerasa matchanya, nggak cuma manis doang. Suasananya juga tenang buat nugas."</p>
+                <span class="reviewer">- Sarah Monica</span>
+            </div>
+
+            <div class="review-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Kopi Susu Gula Arennya mantap! Pas banget takarannya. Pelayanannya juga cepet dan ramah."</p>
+                <span class="reviewer">- Budi Santoso</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <a href="https://wa.me/6287774866237" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
